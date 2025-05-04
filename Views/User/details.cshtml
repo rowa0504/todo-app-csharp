@@ -1,0 +1,10 @@
+@model TodoApp.Models.User
+
+<h2>User Details</h2>
+
+<div>
+    <p><strong>Username:</strong> @Model.Username</p>
+    <p><strong>Password:</strong> @Model.Password</p>
+</div>
+
+<a href="@Url.Action("Index", "User")" class="btn btn-secondary">Back to List</a>

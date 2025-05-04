@@ -1,0 +1,13 @@
+@model TodoApp.Models.User
+
+<h2>本当に削除しますか？</h2>
+
+<div>
+    <strong>ユーザー名:</strong> @Model.Username
+</div>
+
+<form asp-action="Delete" asp-controller="User" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">削除する</button>
+    <a href="@Url.Action("Index", "User")" class="btn btn-secondary">キャンセル</a>
+</form>

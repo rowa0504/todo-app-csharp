@@ -1,0 +1,35 @@
+@model IEnumerable<TodoApp.Models.User>
+
+<h2>Users</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Username</td>
+                <td>**********</td> <!-- パスワードを非表示にする -->
+                <td>
+                    <a href="@Url.Action("Details", "User", new { id = user.Id })" class="btn btn-info">Details</a>
+
+                    <a href="@Url.Action("Edit", "User", new { id = user.Id })" class="btn 
+                    btn-warning">Edit</a>
+                    <!-- 編集ボタン -->
+                    
+                    <a href="@Url.Action("Delete", "User", new { id = user.Id })" class="btn btn-danger">Delete</a>
+                    <!-- 削除ボタン-->
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- ユーザー作成ページへのリンク -->
+<a href="@Url.Action("Create", "User")" class="btn btn-success">Create New User</a>

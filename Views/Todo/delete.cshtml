@@ -1,0 +1,32 @@
+@model TodoApp.Models.Todo
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo削除</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h2 class="card-title text-danger">削除の確認</h2>
+                <p class="card-text">以下のTodoを削除しますか?</p>
+
+                <div class="mb-3">
+                    <strong>タイトル:</strong> @Model.Title
+                </div>
+
+                <form method="post" action="/Todo/Delete/@Model.Id">
+                    <button type="submit" class="btn btn-danger">削除する</button>
+                    <a href="/Todo" class="btn btn-secondary ms-2">キャンセル</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+@model TodoApp.Models.LoginViewModel
+
+<div class="container mt-5" style="max-width: 500px;">
+    <h2 class="text-center mb-4">ログイン</h2>
+
+    @Html.ValidationSummary(true, "", new { @class = "alert alert-danger" })
+
+    <form method="post">
+        <div class="mb-3">
+            <label for="Username" class="form-label">ユーザー名</label>
+            <input type="text" class="form-control" id="Username" name="Username" value="@Model?.Username" required />
+            @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="mb-3">
+            <label for="Password" class="form-label">パスワード</label>
+            <input type="password" class="form-control" id="Password" name="Password" required />
+            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">ログイン</button>
+    </form>
+
+    <div class="text-center mt-3">
+        <p>Don't have an account? <a href="/User/Create">Register here</a></p>
+    </div>
+</div>

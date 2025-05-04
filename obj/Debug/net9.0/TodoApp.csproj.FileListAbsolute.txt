@@ -175,7 +175,6 @@ C:\Users\shunt\Desktop\c#\TodoApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\Syste
 C:\Users\shunt\Desktop\c#\TodoApp\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\shunt\Desktop\c#\TodoApp\obj\Debug\net9.0\scopedcss\bundle\TodoApp.styles.css
 C:\Users\shunt\Desktop\c#\TodoApp\obj\Debug\net9.0\scopedcss\projectbundle\TodoApp.bundle.scp.css
-C:\Users\shunt\Desktop\c#\TodoApp\obj\Debug\net9.0\compressed\egenlg8pe6-b9sayid5wm.gz
 C:\Users\shunt\Desktop\c#\TodoApp\obj\Debug\net9.0\compressed\so5url6utu-61n19gt1b8.gz
 C:\Users\shunt\Desktop\c#\TodoApp\obj\Debug\net9.0\compressed\zu3psyh4um-xtxxf3hu2r.gz
 C:\Users\shunt\Desktop\c#\TodoApp\obj\Debug\net9.0\compressed\zdwfwdl0g3-bqjiyaj88i.gz
@@ -254,3 +253,5 @@ C:\Users\shunt\Desktop\c#\TodoApp\obj\Debug\net9.0\refint\TodoApp.dll
 C:\Users\shunt\Desktop\c#\TodoApp\obj\Debug\net9.0\TodoApp.pdb
 C:\Users\shunt\Desktop\c#\TodoApp\obj\Debug\net9.0\TodoApp.genruntimeconfig.cache
 C:\Users\shunt\Desktop\c#\TodoApp\obj\Debug\net9.0\ref\TodoApp.dll
+C:\Users\shunt\Desktop\c#\TodoApp\obj\Debug\net9.0\TodoApp.sourcelink.json
+C:\Users\shunt\Desktop\c#\TodoApp\obj\Debug\net9.0\compressed\egenlg8pe6-aozzefa61u.gz

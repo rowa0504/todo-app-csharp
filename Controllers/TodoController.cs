@@ -33,22 +33,22 @@ namespace TodoApp.Controllers
 
         // POST: /Todo/Create
         [HttpPost]
-        public IActionResult Create(string title)
+        public IActionResult Create(string title, DateTime? dueDate)
         {
             if (!string.IsNullOrWhiteSpace(title))
             {
-                var todo = new TodoApp.Models.Todo // 修正
+                var todo = new TodoApp.Models.Todo
                 {
                     Title = title,
                     IsDone = false,
-                    // Define a default due date or remove this line if not needed
-                    DueDate = DateTime.Now // Example: default due date set to 7 days from now
+                    DueDate = dueDate ?? DateTime.Now  // 期限が未入力の場合は現在時刻
                 };
                 _context.Todos.Add(todo);
                 _context.SaveChanges();
             }
             return RedirectToAction("Index");
         }
+
 
         public IActionResult Done(int id)
         {

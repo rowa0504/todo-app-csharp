@@ -30,9 +30,13 @@
                 var today = DateTime.Today;
                 var isUrgent = todo.DueDate != null && (todo.DueDate.Value - today).TotalDays <= 3 && !todo.IsDone;
                 var itemClass = isUrgent ? "list-group-item list-group-item-danger" : "list-group-item";
+
                 <li class="@itemClass d-flex justify-content-between align-items-center">
                     <div>
-                        <div>@todo.Title</div>
+                        <!-- 完了済みの場合、横線を引く -->
+                        <div class="@(todo.IsDone ? "completed" : "")">
+                            @todo.Title
+                        </div>
                         @if (todo.DueDate != null)
                         {
                             <small class="text-muted">期限: @todo.DueDate?.ToString("yyyy/MM/dd")</small>

@@ -32,7 +32,7 @@ A simple Windows desktop application for managing tasks using C# and Windows For
 ## 🔧 Tech Stack
 
 - Language: C#
-- Framework: .NET Framework
+- Framework: .NET Framework/ .NET9
 - UI: Windows Forms
 
 ## 💻 How to Run

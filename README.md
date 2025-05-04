@@ -4,10 +4,30 @@ A simple Windows desktop application for managing tasks using C# and Windows For
 
 ## 🚀 Features
 
-- Add new tasks
-- Mark tasks as completed
-- Delete tasks
-- Task list is saved while the application is open
+- Add, edit, delete, and complete tasks
+- View task details
+- Intuitive Windows Forms UI
+
+### 🖼 Screenshots
+
+#### Home Screen
+![Home](images/todo%20home.png)
+
+#### Edit Task
+![Edit](images/todo%20edit.png)
+
+#### Edit with Change
+![Edit Change](images/todo%20edit%20change.png)
+
+#### Task Details
+![Details](images/todo%20ditails.png)
+
+#### Delete Task
+![Delete](images/todo%20delete.png)
+
+#### Complete Task
+![Complete](images/todo%20complete.png)
+
 
 ## 🔧 Tech Stack
 
